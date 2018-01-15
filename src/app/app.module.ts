@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import {ShowDriversComponent} from "./pages/show-drivers/show-drivers.component";
+import {DriverService} from "./core/services/driver.service";
 
 @NgModule({
   declarations: [
@@ -12,7 +13,7 @@ import {ShowDriversComponent} from "./pages/show-drivers/show-drivers.component"
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [DriverService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
